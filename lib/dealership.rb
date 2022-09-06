@@ -35,4 +35,12 @@ class Dealership
   def details
     @inventory
   end
+
+  def average_price_of_car
+    (total_value) / (inventory.length)
+  end
+
+  # def cars_sorted_by_price
+  #   inventory.sort{|car| car.total_cost}
+  # end
 end
